@@ -43,6 +43,7 @@ body {
     padding:0px;
     text-transform:uppercase;
     width:100%;
+    text-align: center;
 }
 
 /* Portrait layout (default) */
@@ -112,4 +113,8 @@ h1 {
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
+}
+
+canvas {
+    background-color: white;
 }
