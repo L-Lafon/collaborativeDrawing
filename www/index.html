@@ -7,6 +7,7 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/excanvas.js"></script>
@@ -15,11 +16,13 @@
 
 
     <body>
-        <div>
-            <h1> Collaborative Drawing </h1>
+        <div class="container">
+            <h1 class="display-1"> Collaborative drawing </h1>
+            <br>
 
-        <canvas id="zoneDessin" width="490" height="220"></canvas>
+            <canvas id="zoneDessin" width="490" height="220"></canvas>
         </div>
+        <br>
         <div>
             <button style ="background-color: green" onclick="changeColor('green')">Green</button>
             <button style ="background-color: red" onclick="changeColor('red')">Red</button>
@@ -27,12 +30,14 @@
             <button style ="background-color: blue; color: white" onclick="changeColor('blue')">Blue</button>
             <button style ="background-color: black; color: white" onclick="changeColor('black')">Black</button>
         </div>
+        <br>
         <div>
-            <button onclick="useRect()">Rectangle</button> 
+            <button onclick="useRect()">Rectangle</button>
             <button>Circle</button>
         </div>
+        <br>
         <div id="inputRect">
-            
+
         </div>
     </body>
 </html>
